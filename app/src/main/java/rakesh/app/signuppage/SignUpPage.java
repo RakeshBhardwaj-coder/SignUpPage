@@ -20,6 +20,7 @@ public class SignUpPage extends AppCompatActivity {
         email = findViewById(R.id.emailText);
         password = findViewById(R.id.passwordText);
         confirmPassword = findViewById(R.id.confirmPasswordText);
+        //checking
 
 
 
