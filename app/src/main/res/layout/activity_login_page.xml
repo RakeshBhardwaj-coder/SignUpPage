@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_blue"
-    tools:context=".MainActivity">
+    tools:context=".LoginPage">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:text="Welcome"
+            android:text="Login"
             android:textColor="@color/blue"
             android:textSize="32sp"
             android:textStyle="bold" />
@@ -30,22 +30,84 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="20dp"
-            android:text="Please login or sign up to continue using our app."
-            android:textSize="18sp" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginTop="10dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/welcome"
+            android:text="Please Login in your account."
+            android:textSize="18sp"
+            style="@style/NoUnderlineEditText"
             />
 
+
+
+        <EditText
+            android:id="@+id/alpEmailText"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email@gmail.com"
+            android:textSize="22sp"
+            android:singleLine="true"
+
+            android:padding="10dp"
+            android:background="@drawable/border_text_design"
+            />
+
+        <EditText
+            android:id="@+id/alpPasswordText"
+            android:inputType="textPassword"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="P@ssw0rd"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:singleLine="true"
+
+            android:background="@drawable/border_text_design"
+            />
+
+        <Button
+            android:id="@+id/alpLoginBtn"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do not have an account?"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/alpSignUpBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignUp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Use social media for SignUP"
+            android:text="OR\nUse social media for Login"
             android:textAlignment="center"
             android:textStyle="bold"
             android:textSize="18sp"
@@ -63,7 +125,7 @@
             >
 
             <ImageView
-                android:id="@+id/googleImg"
+                android:id="@+id/alpGoogleImg"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginRight="20dp"
@@ -74,7 +136,7 @@
                 android:src="@drawable/google" />
 
             <ImageView
-                android:id="@+id/facebookImg"
+                android:id="@+id/alpFacebookImg"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/circle_shape"
@@ -83,7 +145,7 @@
                 android:src="@drawable/facebook" />
 
             <ImageView
-                android:id="@+id/twitterImg"
+                android:id="@+id/alpTwitterImg"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginLeft="20dp"
@@ -92,49 +154,8 @@
                 android:padding="5dp"
                 android:src="@drawable/twitter" />
         </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="or login via email"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            />
-        <Button
-            android:id="@+id/SignUpBtn"
-            android:layout_gravity="center"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:text="Sign Up"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/blue"
-            android:textStyle="bold"
-            />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="20dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="have, you already an account?"
-                android:textSize="16sp"
-                />
-            <TextView
-                android:id="@+id/amLoginPageBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Login"
-                android:layout_marginLeft="10dp"
-                android:textStyle="bold"
-                android:textColor="@color/blue"
-                android:textSize="18sp"
-                />
-        </LinearLayout>
     </LinearLayout>
+
+
 
 </LinearLayout>

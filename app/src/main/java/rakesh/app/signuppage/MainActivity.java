@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         twitterImage = findViewById(R.id.twitterImg);
 
         signUpPageBtn = findViewById(R.id.SignUpBtn);
-        loginPageBtn = findViewById(R.id.LoginPageBtn);
+        loginPageBtn = findViewById(R.id.amLoginPageBtn);
 
 
         signUpPageBtn.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), SignUpPage.class));
 
+            }
+        });
+
+        loginPageBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+               // Toast.makeText(getApplicationContext(), "hii", Toast.LENGTH_SHORT).show();
+               startActivity(new Intent(getApplicationContext(), LoginPage.class));
             }
         });
 
