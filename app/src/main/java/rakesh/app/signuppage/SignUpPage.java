@@ -8,6 +8,8 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.regex.Pattern;
@@ -16,6 +18,9 @@ public class SignUpPage extends AppCompatActivity {
 
     EditText firstName,lastName,email,password,confirmPassword;
     Button signUpBtn;
+    TextView loginBtn;
+
+   ImageView googleImgBtn,facebookImgBtn,twitterImgBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,11 +32,42 @@ public class SignUpPage extends AppCompatActivity {
         password = findViewById(R.id.passwordText);
         confirmPassword = findViewById(R.id.confirmPasswordText);
         signUpBtn = findViewById(R.id.SignUpBtn);
+        loginBtn = findViewById(R.id.asupLoginPageBtn);
+
+        googleImgBtn = findViewById(R.id.asupGoogleImg);
+        facebookImgBtn = findViewById(R.id.asupFacebookImg);
+        twitterImgBtn = findViewById(R.id.asupTwitterImg);
 
         signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 SignUP();
+            }
+        });
+
+    loginBtn.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(getApplicationContext(),TheLoginPage.class));
+        }
+    });
+
+        googleImgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Login using google.", Toast.LENGTH_SHORT).show();
+            }
+        });
+        facebookImgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Login using facebook.", Toast.LENGTH_SHORT).show();
+            }
+        });
+        twitterImgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Login using twitter.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -78,7 +114,7 @@ public class SignUpPage extends AppCompatActivity {
             }
             else if(IsValidPassword(passwordStr) && passwordStr.length()>=8){
                 Toast.makeText(getApplicationContext(),"Thanks for SignUp",Toast.LENGTH_LONG).show();
-                startActivity(new Intent(getApplicationContext(),LoginPage.class));
+                startActivity(new Intent(getApplicationContext(),TheLoginPage.class));
             }
         }
 

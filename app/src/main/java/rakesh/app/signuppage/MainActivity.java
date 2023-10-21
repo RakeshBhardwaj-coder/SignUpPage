@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                // Toast.makeText(getApplicationContext(), "hii", Toast.LENGTH_SHORT).show();
-               startActivity(new Intent(getApplicationContext(), LoginPage.class));
+               startActivity(new Intent(getApplicationContext(), TheLoginPage.class));
             }
         });
 

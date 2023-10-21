@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:textSize="20sp"
+                android:textSize="22sp"
                 android:background="@drawable/border_text_design"
                 android:hint="First Name"
                 android:singleLine="true"
@@ -62,7 +62,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="10dp"
-                android:textSize="20sp"
+                android:textSize="22sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Last Name"
@@ -82,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email@gmail.com"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:singleLine="true"
 
             android:padding="10dp"
@@ -98,7 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="P@ssw0rd"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:padding="10dp"
             android:singleLine="true"
 
@@ -113,7 +113,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Confirm P@ssw0rd"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:singleLine="true"
 
             android:padding="10dp"
@@ -150,7 +150,7 @@
                 android:textSize="16sp"
                 />
             <TextView
-                android:id="@+id/LoginPageBtn"
+                android:id="@+id/asupLoginPageBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Login"
@@ -182,7 +182,7 @@
             >
 
             <ImageView
-                android:id="@+id/googleImg"
+                android:id="@+id/asupGoogleImg"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginRight="20dp"
@@ -193,7 +193,7 @@
                 android:src="@drawable/google" />
 
             <ImageView
-                android:id="@+id/facebookImg"
+                android:id="@+id/asupFacebookImg"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/circle_shape"
@@ -202,7 +202,7 @@
                 android:src="@drawable/facebook" />
 
             <ImageView
-                android:id="@+id/twitterImg"
+                android:id="@+id/asupTwitterImg"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginLeft="20dp"
