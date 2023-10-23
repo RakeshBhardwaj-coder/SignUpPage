@@ -17,11 +17,7 @@
             android:exported="false" >
 
         </activity>
-        <activity
-            android:name=".LoginPage"
-            android:exported="false">
 
-        </activity>
         <activity
             android:name=".SignUpPage"
             android:exported="false" />
